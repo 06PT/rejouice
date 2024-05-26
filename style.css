@@ -1,0 +1,267 @@
+@font-face {
+  font-family: nb;
+  src: url(./NBInternationalProBoo.ttf);
+}
+@font-face {
+  font-family: rejoy;
+  src: url(./Rejouice-Headline.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: nb;
+}
+.loader{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(35, 33, 33);
+}
+.loader h3{
+  font-size: 1.4vw;
+}
+.page1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #dadada;
+}
+.page1 video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.cursor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7.5vw;
+  width: 7.5vw;
+  border-radius: 50%;
+  background-color: #ff5f38;
+  position: fixed;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+.cursor h5 {
+  font-weight: 500;
+  font-size: 1.2vw;
+  color: rgb(39, 33, 33);
+}
+.page1-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  color: white;
+}
+nav {
+  padding: 3vw 3vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav h3 {
+  font-weight: 400;
+  font-size: 1.4vw;
+}
+nav h4 {
+  font-weight: 300;
+  font-size: 1.3vw;
+}
+.page1-content h1 {
+  font-family: rejoy;
+  font-size: 27vw;
+  font-weight: 300;
+  line-height: 27vw;
+}
+.page1-content h1 span{
+  display: inline-block;
+}
+.page2 {
+  padding-top: 5vw;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(245, 243, 243);
+}
+.upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vw 3vw;
+}
+.left span {
+  font-size: 1.68vw;
+}
+.right h4 {
+  font-weight: 400;
+  font-size: 1.6vw;
+}
+.bnd{
+  width: fit-content;
+  overflow: hidden;
+  /* background-color: grey; */
+}
+.belem{
+  transform: translateX(100%);
+}
+.btm {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.468);
+  margin: 0 3vw;
+}
+.elem {
+  padding: 1.5vw 3vw;
+}
+.bound{
+  width: fit-content;
+  overflow: hidden;
+}
+.boundelem{
+  opacity: 0;
+  transform: translateY(100%);
+}
+.elem h1 {
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 4vw;
+}
+.page3 {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(245, 243, 243);
+  padding: 3vw;
+}
+.top {
+  text-align: center;
+  line-height: 4vw;
+}
+.top h4 {
+  margin-bottom: 0.6vw;
+  font-size: 1.2vw;
+  font-weight: 400;
+}
+.top h4 span {
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: white;
+  background: black;
+  font-size: 0.7vw;
+  border: 1px solid rgba(0, 0, 0, 0.477);
+}
+.top h1 {
+  letter-spacing: -0.5px;
+  font-size: 4vw;
+  font-weight: 500;
+}
+.page3-elems {
+  margin-top: 12vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75vh;
+  width: 100%;
+  /*   background-color: red; */
+}
+.page3-elems .box {
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  width: 32.5%;
+  /*   background-color: burlywood; */
+}
+.page3-elems .box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.page3-elems .box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.7s;
+}
+.page3-elems .box:hover img {
+  opacity: 0;
+}
+.page4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.page4 video {
+  height: 100%;
+}
+.page4 svg {
+  position: absolute;
+  height: 65%;
+}
+.page5 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 4vw 0;
+}
+.page5 h1 {
+  font-weight: 100;
+  font-family: rejoy;
+  font-size: 10vw;
+  border-bottom: 1px solid black;
+  width: 94%;
+  margin-left: 3%;
+}
+.swiperdiv {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
